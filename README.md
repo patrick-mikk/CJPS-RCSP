@@ -27,7 +27,7 @@ This repository contains a Citation Style Language (CSL) file for the Canadian J
 
 ### Mendeley
 
-1. Download the `CJPS-RCSP.csl` file from this repository
+1. [Download the `CJPS-RCSP.csl` file](https://github.com/patrick-mikk/CJPS-RCSP/releases/download/v1.0.0/CJPS-RCSP.csl) from this repository
 2. Open Mendeley Desktop
 3. Go to View > Citation Styles > More Styles
 4. Click "Install new style"
