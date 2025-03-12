@@ -203,21 +203,32 @@ This CSL file was created by *Patrick A. Mikkelsen* based on the *Canadian Journ
 
 ### Canadian Journal of Political Science Resources
 
-1. [CJPS Instructions for Contributors](https://www.cambridge.org/core/journals/canadian-journal-of-political-science-revue-canadienne-de-science-politique/information/instructions-for-contributors-directives-aux-auteurs-es)\
-    ```https://www.cambridge.org/core/journals/canadian-journal-of-political-science-revue-canadienne-de-science-politique/information/instructions-for-contributors-directives-aux-auteurs-es```
-2. [CPSA Editorial Style Guidelines (2008)](https://www.cpsa-acsp.ca/documents/pdfs/Editorial%20Style%20Guidelines%202008.pdf)\
-    ```https://www.cpsa-acsp.ca/documents/pdfs/Editorial%20Style%20Guidelines%202008.pdf```
-3. [CJPS Quick Guide (Memorial University Library)](https://www.library.mun.ca/media/MUNLibrary/pdf/CJPSQuickGuide.pdf)\
-    ```https://www.library.mun.ca/media/MUNLibrary/pdf/CJPSQuickGuide.pdf```
+This repository includes several resources for understanding and implementing the CJPS citation style:
+
+1. **CJPS-RCSP.csl** - The Citation Style Language file for use with reference managers.
+
+2. **Documentation:**
+   - `CJPS.md` - Comprehensive guide to CJPS citation style
+   - `CJPS-RCSP - Notes.md` - Detailed notes on CJPS citation formatting and guidelines
+   - `CJPS-RCSP - Instructions for Contributors.md` - Official instructions from the journal
+
+3. **Reference Materials:**
+   - `CJPSQuickGuide.pdf` - Quick reference guide from Memorial University Library
+   - `CJPS - Editorial Style Guidelines 2008.pdf` - Official CPSA editorial style guidelines
+   - `Canadian-Journal-of-Political-Science-Preparing-Materials.pdf` - Guidelines for preparing materials
+
+### External Resources
+
+1. [CJPS Instructions for Contributors](https://www.cambridge.org/core/journals/canadian-journal-of-political-science-revue-canadienne-de-science-politique/information/instructions-for-contributors-directives-aux-auteurs-es)
+2. [CPSA Editorial Style Guidelines (2008)](https://www.cpsa-acsp.ca/documents/pdfs/Editorial%20Style%20Guidelines%202008.pdf)
+3. [CJPS Quick Guide (Memorial University Library)](https://www.library.mun.ca/media/MUNLibrary/pdf/CJPSQuickGuide.pdf)
+4. [Canadian Journal of Political Science (Cambridge Core)](https://www.cambridge.org/core/journals/canadian-journal-of-political-science-revue-canadienne-de-science-politique)
+5. [Editorial Manager System for CJPS](https://www.editorialmanager.com/cjps-rcsp/)
 
 ### Citation Style Language Resources
 
-1. [Citation Style Language](https://citationstyles.org/)\
-   ```https://citationstyles.org/```
-2. [Citation Style Language Validator](https://validator.citationstyles.org/)\
-   ```https://validator.citationstyles.org/```
-3. [Citation Style Language Documentation](https://docs.citationstyles.org/)\
-   ```https://docs.citationstyles.org/```
-4. [Citation Style Language GitHub](https://github.com/citation-style-language/styles)\
-   ```https://github.com/citation-style-language/styles```
+1. [Citation Style Language](https://citationstyles.org/)
+2. [Citation Style Language Validator](https://validator.citationstyles.org/)
+3. [Citation Style Language Documentation](https://docs.citationstyles.org/)
+4. [Citation Style Language GitHub](https://github.com/citation-style-language/styles)
 
