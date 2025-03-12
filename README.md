@@ -17,21 +17,21 @@ This repository contains a Citation Style Language (CSL) file for the Canadian J
 
 ### Zotero
 
-1. Download the `cjps.csl` file from this repository
+1. Download the `CJPS-RCSP.csl` file from this repository
 2. Open Zotero
 3. Go to Preferences (Edit > Preferences)
 4. Select the "Cite" tab
 5. Click the "+" button under "Style Manager"
-6. Navigate to and select the downloaded `cjps.csl` file
+6. Navigate to and select the downloaded `CJPS-RCSP.csl` file
 7. The style will now appear in your list of citation styles
 
 ### Mendeley
 
-1. Download the `cjps.csl` file from this repository
+1. Download the `CJPS-RCSP.csl` file from this repository
 2. Open Mendeley Desktop
 3. Go to View > Citation Styles > More Styles
 4. Click "Install new style"
-5. Navigate to and select the downloaded `cjps.csl` file
+5. Navigate to and select the downloaded `CJPS-RCSP.csl` file
 6. The style will now be available in your citation styles
 
 ## Citation Style Overview
@@ -191,8 +191,6 @@ Author/Organization. Year. "Title." URL (Access Date).
 
 If the CSL file is not working correctly, you can validate it using the [CSL Validator](https://validator.citationstyles.org/).
 
-```https://validator.citationstyles.org/```
-
 ## License
 
 This CSL style is released under a [Creative Commons Attribution-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-sa/3.0/).
@@ -201,21 +199,20 @@ This CSL style is released under a [Creative Commons Attribution-ShareAlike 3.0 
 
 This CSL file was created by *Patrick A. Mikkelsen* based on the *Canadian Journal of Political Science* citation requirements. 
 
-### Canadian Journal of Political Science Resources
+### Repository Structure
 
 This repository includes several resources for understanding and implementing the CJPS citation style:
 
 1. **CJPS-RCSP.csl** - The Citation Style Language file for use with reference managers.
 
 2. **Documentation:**
-   - `CJPS.md` - Comprehensive guide to CJPS citation style
-   - `CJPS-RCSP - Notes.md` - Detailed notes on CJPS citation formatting and guidelines
-   - `CJPS-RCSP - Instructions for Contributors.md` - Official instructions from the journal
+   - `CJPS-RCSP - Style Guide and Notes.md` - Comprehensive guide to CJPS citation style and formatting
+   - `CJPS-RCSP - Instructions for Contributors.md` - Reproduction of the official instructions from the journal as markdown
 
 3. **Reference Materials:**
-   - `CJPSQuickGuide.pdf` - Quick reference guide from Memorial University Library
-   - `CJPS - Editorial Style Guidelines 2008.pdf` - Official CPSA editorial style guidelines
-   - `Canadian-Journal-of-Political-Science-Preparing-Materials.pdf` - Guidelines for preparing materials
+   - `CJPS-RCSP - Style Quick Guide.pdf` - Quick reference guide from Memorial University Library
+   - `CJPS-RCSP - Editorial Style Guidelines 2008.pdf` - Official CPSA editorial style guidelines
+   - `CJPS-RCSP - Instructions for Contributors.pdf` - Guidelines for preparing materials for submission
 
 ### External Resources
 

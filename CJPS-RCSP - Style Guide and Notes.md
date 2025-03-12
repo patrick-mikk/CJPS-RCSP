@@ -311,18 +311,27 @@ The reference list should appear at the end of your paper under the heading "Ref
 
 ## 9. Resources
 
+### Repository Contents
+
+This repository contains the following resources for implementing the CJPS citation style:
+
+1. **`CJPS-RCSP.csl`** - The Citation Style Language file for use with reference managers such as Zotero and Mendeley
+
+2. **Documentation:**
+   - `README.md` - Installation instructions and overview of the citation style
+   - `CJPS-RCSP - Style Guide and Notes.md` (this file) - Comprehensive guide to citation style and manuscript formatting
+   - `CJPS-RCSP - Instructions for Contributors.md` - Reproduction of the official instructions from the journal as markdown
+
+3. **Reference Materials:**
+   - `CJPS-RCSP - Style Quick Guide.pdf` - Quick reference guide from Memorial University Library
+   - `CJPS-RCSP - Editorial Style Guidelines 2008.pdf` - Official CPSA editorial style guidelines
+   - `CJPS-RCSP - Instructions for Contributors.pdf` - Official guidelines for preparing materials for submission
+
 ### Official CJPS Resources
 
 1. [CJPS Instructions for Contributors](https://www.cambridge.org/core/journals/canadian-journal-of-political-science-revue-canadienne-de-science-politique/information/instructions-for-contributors-directives-aux-auteurs-es)
 2. [Canadian Journal of Political Science (Cambridge Core)](https://www.cambridge.org/core/journals/canadian-journal-of-political-science-revue-canadienne-de-science-politique)
 3. [Editorial Manager System for CJPS](https://www.editorialmanager.com/cjps-rcsp/)
-
-### Reference Materials in this Repository
-
-1. `CJPSQuickGuide.pdf` - Quick reference guide from Memorial University Library
-2. `CJPS - Editorial Style Guidelines 2008.pdf` - Official CPSA editorial style guidelines
-3. `Canadian-Journal-of-Political-Science-Preparing-Materials.pdf` - Guidelines for preparing materials
-4. `CJPS-RCSP.csl` - Citation Style Language file for reference managers
 
 ### Citation Style Language Resources
 
