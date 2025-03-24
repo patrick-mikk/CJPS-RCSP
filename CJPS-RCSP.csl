@@ -389,7 +389,9 @@
         
         <!-- Legislation (adding specific handling for legislation) -->
         <else-if type="legislation bill" match="any">
-          <text macro="legislation-info" prefix=". "/>
+          <group delimiter=" " prefix=" ">
+            <text variable="container-title"/>
+          </group>
           <text macro="legislation-access" prefix=". "/>
         </else-if>
         
