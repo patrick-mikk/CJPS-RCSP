@@ -12,12 +12,13 @@ This repository contains a Citation Style Language (CSL) file for the Canadian J
 - [Special Formatting](#special-formatting)
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
+- [Version History](#version-history)
 
 ## Installation
 
 ### Zotero
 
-1. [Download the `CJPS-RCSP.csl` file](https://github.com/patrick-mikk/CJPS-RCSP/releases/download/v1.0.0/CJPS-RCSP.csl) from this repository
+1. [Download the `CJPS-RCSP.csl` file](https://github.com/patrick-mikk/CJPS-RCSP/releases/download/v1.1.0/CJPS-RCSP.csl) from this repository
 2. Open Zotero
 3. Go to Preferences (Edit > Preferences)
 4. Select the "Cite" tab
@@ -27,7 +28,7 @@ This repository contains a Citation Style Language (CSL) file for the Canadian J
 
 ### Mendeley
 
-1. [Download the `CJPS-RCSP.csl` file](https://github.com/patrick-mikk/CJPS-RCSP/releases/download/v1.0.0/CJPS-RCSP.csl) from this repository
+1. [Download the `CJPS-RCSP.csl` file](https://github.com/patrick-mikk/CJPS-RCSP/releases/download/v1.1.0/CJPS-RCSP.csl) from this repository
 2. Open Mendeley Desktop
 3. Go to View > Citation Styles > More Styles
 4. Click "Install new style"
@@ -45,6 +46,7 @@ The CJPS style is an author-date system with the following key features:
 - Titles of containers (journals, books) in italics
 - Article titles in quotation marks
 - Bilingual support (English and French-Canadian)
+- Proper handling of legislation citations with statute information
 
 ## In-text Citations
 
@@ -113,6 +115,17 @@ Government Agency. Year. Title. Place: Publisher.
 Author/Organization. Year. "Title." URL (Access Date).
 ```
 
+#### Legislation/Statutes
+
+```
+Title of Act. Year. Statute Information. URL.
+```
+
+Example:
+```
+Accepting Schools Act. 2012. S.O. 2012, c. 5. https://www.ola.org/en/legislative-business/bills/parliament-40/session-1/bill-13.
+```
+
 ## Examples
 
 ### In-text Citations
@@ -121,6 +134,7 @@ Author/Organization. Year. "Title." URL (Access Date).
 - `(Tanguay and Gagnon, 1996: 3)`
 - `(Lambert et al., 1986)`
 - `(Irvine, 1974; Meisel, 1967)`
+- `(Accepting Schools Act, 2012)`
 
 ### Bibliography Entries
 
@@ -152,6 +166,11 @@ Author/Organization. Year. "Title." URL (Access Date).
 - **Website**: 
   ```
   Angus Reid Global. "Quebecers, Canadians Split on Proposed Charter of Values." http://angusreid.org/quebecers... (December 16, 2018).
+  ```
+
+- **Legislation**: 
+  ```
+  Accepting Schools Act. 2012. S.O. 2012, c. 5. https://www.ola.org/en/legislative-business/bills/parliament-40/session-1/bill-13.
   ```
 
 ## Special Formatting
@@ -186,6 +205,7 @@ Author/Organization. Year. "Title." URL (Access Date).
 - **Page numbers not formatting correctly**: Ensure page numbers are entered in the "Pages" field, not in "Extra" or "Notes"
 - **Missing colon before page numbers**: Check for proper locator formatting in your reference manager
 - **Author names not displaying correctly**: Ensure author names are properly entered in your reference database with the last name in the last name field
+- **Legislation not displaying properly**: For legislation, enter the statute information (e.g., "S.O. 2012, c. 5") in the "Code" field in Zotero
 
 ### Validation
 
@@ -234,4 +254,16 @@ This repository includes several resources for understanding and implementing th
 2. [Citation Style Language Validator](https://validator.citationstyles.org/)
 3. [Citation Style Language Documentation](https://docs.citationstyles.org/)
 4. [Citation Style Language GitHub](https://github.com/citation-style-language/styles)
+
+## Version History
+
+### v1.1.0 (2025-03-24)
+- Fixed legislation citation formatting to properly display statute information
+- Improved URL handling for legislation entries
+- Updated documentation with examples for legislation
+
+### v1.0.0 (2025-03-12)
+- Initial release
+- Basic support for all major reference types
+- Bilingual support for English and French
 
