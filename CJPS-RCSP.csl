@@ -261,7 +261,7 @@
         </if>
       </choose>
       <choose>
-        <if type="legal_case" match="none">
+        <if type="legal_case legislation bill" match="none">
           <choose>
             <if variable="DOI">
               <text variable="DOI" prefix="https://doi.org/"/>
@@ -295,6 +295,24 @@
   <macro name="collection-title">
     <text variable="collection-title"/>
     <text variable="collection-number" prefix=" "/>
+  </macro>
+
+  <macro name="legislation-info">
+    <choose>
+      <if type="legislation bill" match="any">
+        <group delimiter=". ">
+          <text variable="container-title"/>
+        </group>
+      </if>
+    </choose>
+  </macro>
+
+  <macro name="legislation-access">
+    <choose>
+      <if variable="URL">
+        <text variable="URL"/>
+      </if>
+    </choose>
   </macro>
 
   <macro name="event">
@@ -369,8 +387,14 @@
           </group>
         </if>
         
+        <!-- Legislation (adding specific handling for legislation) -->
+        <else-if type="legislation bill" match="any">
+          <text macro="legislation-info" prefix=". "/>
+          <text macro="legislation-access" prefix=". "/>
+        </else-if>
+        
         <!-- Books, theses, reports -->
-        <else-if type="bill book graphic legal_case legislation motion_picture report song thesis" match="any">
+        <else-if type="bill book graphic legal_case motion_picture report song thesis" match="any">
           <group prefix=". " delimiter=". ">
             <text macro="edition"/>
             <text macro="collection-title"/>
