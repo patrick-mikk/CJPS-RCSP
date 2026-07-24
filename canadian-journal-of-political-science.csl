@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" initialize-with="." default-locale="en-CA">
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" page-range-format="minimal-two" default-locale="en-CA">
   <info>
     <title>Canadian Journal of Political Science/Revue canadienne de science politique</title>
     <title-short>CJPS</title-short>
@@ -17,7 +17,7 @@
     <issn>0008-4239</issn>
     <eissn>1744-9324</eissn>
     <summary>Style for the Canadian Journal of Political Science/Revue canadienne de science politique following the author-date system (Chicago Manual of Style author-date variant)</summary>
-    <updated>2026-07-24T05:40:54+00:00</updated>
+    <updated>2026-07-24T06:20:52+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
 
@@ -60,7 +60,7 @@
   <!-- Author/Editor Macros -->
   <macro name="author">
     <names variable="author">
-      <name and="text" delimiter=", " delimiter-precedes-last="never" initialize-with="." name-as-sort-order="first"/>
+      <name and="text" delimiter=", " delimiter-precedes-last="never" name-as-sort-order="first"/>
       <label form="short" prefix=" "/>
       <substitute>
         <names variable="editor"/>
@@ -91,14 +91,14 @@
   
   <macro name="editor">
     <names variable="editor">
-      <name and="text" delimiter=", " delimiter-precedes-last="never" initialize-with="."/>
+      <name and="text" delimiter=", " delimiter-precedes-last="never"/>
       <label form="short" prefix=", "/>
     </names>
   </macro>
   
   <macro name="translator">
     <names variable="translator">
-      <name and="text" delimiter=", " delimiter-precedes-last="never" initialize-with="."/>
+      <name and="text" delimiter=", " delimiter-precedes-last="never"/>
       <label form="short" prefix=", "/>
     </names>
   </macro>
@@ -112,14 +112,14 @@
             <name and="text" delimiter=", "/>
           </names>
           <names variable="editor translator" delimiter=", ">
-            <label form="verb" suffix=" "/>
+            <label form="short" suffix=" "/>
             <name and="text" delimiter=", "/>
           </names>
         </group>
       </if>
     </choose>
   </macro>
-  
+
   <macro name="secondary-contributors">
     <choose>
       <if type="chapter entry-dictionary entry-encyclopedia paper-conference" match="none">
@@ -140,7 +140,7 @@
   <!-- Title Macros -->
   <macro name="title">
     <choose>
-      <if type="bill book graphic legal_case legislation motion_picture report song thesis" match="any">
+      <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
         <text variable="title" font-style="italic"/>
       </if>
       <else-if variable="reviewed-author">
@@ -177,7 +177,7 @@
   <macro name="container-title">
     <choose>
       <if type="chapter entry-dictionary entry-encyclopedia paper-conference" match="any">
-        <text value="In" suffix=" "/>
+        <text term="in" text-case="capitalize-first" suffix=" "/>
       </if>
     </choose>
     <choose>
@@ -365,97 +365,116 @@
       <key macro="sort-key"/>
     </sort>
     <layout suffix=".">
-      <!-- Author(s) -->
-      <text macro="author" suffix=". "/>
-      
-      <!-- Year -->
-      <text macro="year-date" suffix=". "/>
-      
-      <!-- Title -->
-      <text macro="title"/>
-      
-      <!-- Specific formats -->
       <choose>
-        <!-- Book chapters -->
-        <if type="chapter paper-conference" match="any">
-          <group prefix=". ">
-            <text macro="container-title"/>
-            <text macro="container-contributors"/>
-          </group>
-          <text prefix=". " macro="publisher"/>
-          <group prefix=", " delimiter=", ">
-            <text macro="pages"/>
+        <!-- Legal cases: court/authority leads, then case name, then reporter citation -->
+        <if type="legal_case" match="any">
+          <group delimiter=". ">
+            <text variable="authority"/>
+            <group delimiter=", ">
+              <text variable="title"/>
+              <group delimiter=" ">
+                <text macro="year-date" prefix="[" suffix="]"/>
+                <text variable="volume"/>
+                <text variable="container-title"/>
+                <text variable="page"/>
+              </group>
+            </group>
           </group>
         </if>
-        
-        <!-- Legislation (adding specific handling for legislation) -->
-        <else-if type="legislation bill" match="any">
-          <group delimiter=" " prefix=" ">
-            <text variable="container-title"/>
-          </group>
-          <text macro="legislation-access" prefix=". "/>
-        </else-if>
-        
-        <!-- Books, theses, reports -->
-        <else-if type="bill book graphic legal_case motion_picture report song thesis" match="any">
-          <group prefix=". " delimiter=". ">
-            <text macro="edition"/>
-            <text macro="collection-title"/>
-            <text macro="publisher"/>
-          </group>
-        </else-if>
-        
-        <!-- Journal articles -->
-        <else-if type="article-journal article-magazine" match="any">
-          <group prefix=". " delimiter=" ">
-            <text variable="container-title" font-style="italic"/>
-            <text variable="volume"/>
-            <group delimiter="">
-              <text variable="issue" prefix="(" suffix=")"/>
-            </group>
-            <text variable="page" prefix=": "/>
-          </group>
-        </else-if>
-        
-        <!-- Newspaper articles -->
-        <else-if type="article-newspaper" match="any">
-          <group prefix=". " delimiter=", ">
-            <text variable="container-title" font-style="italic"/>
-            <date variable="issued">
-              <date-part name="month" form="long"/>
-              <date-part name="day" prefix=" "/>
-            </date>
-            <text variable="section"/>
-            <text variable="page"/>
-          </group>
-        </else-if>
-        
-        <!-- Conference papers -->
-        <else-if type="speech" match="any">
-          <group prefix=". " delimiter=". ">
-            <text macro="event"/>
-            <text variable="event-place"/>
-            <text macro="day-month"/>
-          </group>
-        </else-if>
-        
-        <!-- Legal cases -->
-        <else-if type="legal_case" match="any">
-          <group prefix=". " delimiter=" ">
-            <text variable="authority"/>
-            <text variable="number"/>
-            <date variable="issued" prefix="(" suffix=")">
-              <date-part name="year"/>
-            </date>
-          </group>
-        </else-if>
+        <else>
+          <!-- Author(s) -->
+          <text macro="author" suffix=". "/>
+
+          <!-- Year -->
+          <text macro="year-date" suffix=". "/>
+
+          <!-- Title -->
+          <text macro="title"/>
+
+          <!-- Specific formats -->
+          <choose>
+            <!-- Book chapters -->
+            <if type="chapter paper-conference" match="any">
+              <group prefix=". ">
+                <text macro="container-title"/>
+                <text macro="container-contributors"/>
+              </group>
+              <text prefix=". " macro="publisher"/>
+              <group prefix=", " delimiter=", ">
+                <text macro="pages"/>
+              </group>
+            </if>
+
+            <!-- Legislation -->
+            <else-if type="legislation bill" match="any">
+              <group delimiter=" " prefix=" ">
+                <text variable="container-title"/>
+              </group>
+              <text macro="legislation-access" prefix=". "/>
+            </else-if>
+
+            <!-- Thesis / dissertation: "Title." Degree. Institution, Place. -->
+            <else-if type="thesis" match="any">
+              <group prefix=". " delimiter=". ">
+                <text variable="genre"/>
+                <group delimiter=", ">
+                  <text variable="publisher"/>
+                  <text variable="publisher-place"/>
+                </group>
+              </group>
+            </else-if>
+
+            <!-- Books, reports, etc. -->
+            <else-if type="bill book graphic motion_picture report song" match="any">
+              <group prefix=". " delimiter=". ">
+                <text macro="edition"/>
+                <text macro="collection-title"/>
+                <text macro="publisher"/>
+              </group>
+            </else-if>
+
+            <!-- Journal articles: Title *Volume* (Issue): pages -->
+            <else-if type="article-journal article-magazine" match="any">
+              <group prefix=". ">
+                <text variable="container-title" font-style="italic"/>
+                <group prefix=" " delimiter=" ">
+                  <text variable="volume" font-weight="bold"/>
+                  <text variable="issue" prefix="(" suffix=")"/>
+                </group>
+                <text variable="page" prefix=": "/>
+              </group>
+            </else-if>
+
+            <!-- Newspaper articles -->
+            <else-if type="article-newspaper" match="any">
+              <group prefix=". " delimiter=", ">
+                <text variable="container-title" font-style="italic"/>
+                <date variable="issued">
+                  <date-part name="month" form="long"/>
+                  <date-part name="day" prefix=" "/>
+                </date>
+                <text variable="section"/>
+                <text variable="page"/>
+              </group>
+            </else-if>
+
+            <!-- Conference papers / speeches -->
+            <else-if type="speech" match="any">
+              <group prefix=". " delimiter=". ">
+                <text macro="event"/>
+                <text variable="event-place"/>
+                <text macro="day-month"/>
+              </group>
+            </else-if>
+          </choose>
+
+          <!-- Secondary contributors -->
+          <text macro="secondary-contributors" prefix=". "/>
+
+          <!-- Access info (for online resources) -->
+          <text prefix=". " macro="access"/>
+        </else>
       </choose>
-      
-      <!-- Secondary contributors -->
-      <text macro="secondary-contributors" prefix=". "/>
-      
-      <!-- Access info (for online resources) -->
-      <text prefix=". " macro="access"/>
     </layout>
   </bibliography>
 </style>
