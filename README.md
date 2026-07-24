@@ -18,21 +18,21 @@ This repository contains a Citation Style Language (CSL) file for the Canadian J
 
 ### Zotero
 
-1. [Download the `CJPS-RCSP.csl` file](https://github.com/patrick-mikk/CJPS-RCSP/releases/download/v1.1.0/CJPS-RCSP.csl) from this repository
+1. [Download the `canadian-journal-of-political-science.csl` file](https://raw.githubusercontent.com/patrick-mikk/CJPS-RCSP/main/canadian-journal-of-political-science.csl) from this repository (right-click → Save As)
 2. Open Zotero
 3. Go to Preferences (Edit > Preferences)
 4. Select the "Cite" tab
 5. Click the "+" button under "Style Manager"
-6. Navigate to and select the downloaded `CJPS-RCSP.csl` file
+6. Navigate to and select the downloaded `canadian-journal-of-political-science.csl` file
 7. The style will now appear in your list of citation styles
 
 ### Mendeley
 
-1. [Download the `CJPS-RCSP.csl` file](https://github.com/patrick-mikk/CJPS-RCSP/releases/download/v1.1.0/CJPS-RCSP.csl) from this repository
+1. [Download the `canadian-journal-of-political-science.csl` file](https://raw.githubusercontent.com/patrick-mikk/CJPS-RCSP/main/canadian-journal-of-political-science.csl) from this repository (right-click → Save As)
 2. Open Mendeley Desktop
 3. Go to View > Citation Styles > More Styles
 4. Click "Install new style"
-5. Navigate to and select the downloaded `CJPS-RCSP.csl` file
+5. Navigate to and select the downloaded `canadian-journal-of-political-science.csl` file
 6. The style will now be available in your citation styles
 
 ## Citation Style Overview
@@ -229,7 +229,7 @@ This CSL file was created by *Patrick A. Mikkelsen* based on the *Canadian Journ
 
 This repository includes several resources for understanding and implementing the CJPS citation style:
 
-1. **CJPS-RCSP.csl** - The Citation Style Language file for use with reference managers.
+1. **canadian-journal-of-political-science.csl** - The Citation Style Language file for use with reference managers. The file name follows the [CSL style repository](https://github.com/citation-style-language/styles) convention (matching the style ID) so it is ready for submission to Zotero's central style repository.
 
 2. **Documentation:**
    - `CJPS-RCSP - Style Guide and Notes.md` - Comprehensive guide to CJPS citation style and formatting

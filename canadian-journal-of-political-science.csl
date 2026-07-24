@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" initialize-with="." default-locale="en-CA">
   <info>
-    <title>Canadian Journal of Political Science</title>
+    <title>Canadian Journal of Political Science/Revue canadienne de science politique</title>
     <title-short>CJPS</title-short>
     <id>http://www.zotero.org/styles/canadian-journal-of-political-science</id>
     <link href="http://www.zotero.org/styles/canadian-journal-of-political-science" rel="self"/>
+    <link href="http://www.zotero.org/styles/chicago-author-date" rel="template"/>
     <link href="https://www.cambridge.org/core/journals/canadian-journal-of-political-science-revue-canadienne-de-science-politique/information/instructions-contributors" rel="documentation"/>
     <author>
       <name>Patrick A. Mikkelsen</name>
@@ -15,8 +16,8 @@
     <category field="political_science"/>
     <issn>0008-4239</issn>
     <eissn>1744-9324</eissn>
-    <summary>Style for the Canadian Journal of Political Science following the author-date system (Chicago Manual of Style author-date variant)</summary>
-    <updated>2024-07-20T12:00:00+00:00</updated>
+    <summary>Style for the Canadian Journal of Political Science/Revue canadienne de science politique following the author-date system (Chicago Manual of Style author-date variant)</summary>
+    <updated>2026-07-24T05:40:54+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
 
@@ -457,4 +458,4 @@
       <text prefix=". " macro="access"/>
     </layout>
   </bibliography>
-</style> 
+</style>

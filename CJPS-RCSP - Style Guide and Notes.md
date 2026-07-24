@@ -315,7 +315,7 @@ The reference list should appear at the end of your paper under the heading "Ref
 
 This repository contains the following resources for implementing the CJPS citation style:
 
-1. **`CJPS-RCSP.csl`** - The Citation Style Language file for use with reference managers such as Zotero and Mendeley
+1. **`canadian-journal-of-political-science.csl`** - The Citation Style Language file for use with reference managers such as Zotero and Mendeley
 
 2. **Documentation:**
    - `README.md` - Installation instructions and overview of the citation style
